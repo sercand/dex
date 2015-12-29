@@ -7,6 +7,7 @@ import (
 	"github.com/coreos/dex/connector"
 	"github.com/coreos/dex/db"
 	_ "github.com/coreos/dex/db/postgresql"
+	_ "github.com/coreos/dex/db/mongodb"
 	"github.com/coreos/go-oidc/oidc"
 )
 

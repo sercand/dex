@@ -16,6 +16,8 @@ import (
 	"github.com/coreos/dex/admin"
 	"github.com/coreos/dex/db"
 	_ "github.com/coreos/dex/db/postgresql"
+	_ "github.com/coreos/dex/db/mongodb"
+
 	pflag "github.com/coreos/dex/pkg/flag"
 	"github.com/coreos/dex/pkg/log"
 	ptime "github.com/coreos/dex/pkg/time"

@@ -7,6 +7,8 @@ import (
 
 	"github.com/coreos/dex/db"
 	_ "github.com/coreos/dex/db/postgresql"
+	_ "github.com/coreos/dex/db/mongodb"
+
 )
 
 func initDB(dsn string) db.Driver {

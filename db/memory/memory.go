@@ -118,12 +118,13 @@ func (m *MemoryDB) NewClientIdentityRepo() client.ClientIdentityRepo {
 func (m *MemoryDB) NewSessionRepo() session.SessionRepo {
 	return m.sessionRepo
 }
-func (m *MemoryDB) NewPasswordInfoRepo() user.PasswordInfoRepo {
-	return m.passwordInfoRepo
-}
 
 func (m *MemoryDB) NewSessionKeyRepo() session.SessionKeyRepo {
 	return m.sessionKeyRepo
+}
+
+func (m *MemoryDB) NewPasswordInfoRepo() user.PasswordInfoRepo {
+	return m.passwordInfoRepo
 }
 
 func (m *MemoryDB) NewPrivateKeySetRepo(useOldFormatKeySecrets bool, keySecrets ...[]byte) (key.PrivateKeySetRepo, error) {

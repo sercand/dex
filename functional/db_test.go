@@ -11,6 +11,8 @@ import (
 	"github.com/coreos/dex/client"
 	"github.com/coreos/dex/db"
 	_ "github.com/coreos/dex/db/postgresql"
+	_ "github.com/coreos/dex/db/mongodb"
+
 	"github.com/coreos/dex/refresh"
 	"github.com/coreos/dex/session"
 	"github.com/coreos/go-oidc/key"
